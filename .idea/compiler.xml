@@ -9,11 +9,13 @@
         <module name="day01-servlet" />
         <module name="java-web-learning" />
         <module name="day02-request" />
+        <module name="day03-response" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="day01-servlet" target="1.8" />
       <module name="day02-request" target="1.8" />
+      <module name="day03-response" target="10" />
       <module name="java-web-learning" target="17" />
     </bytecodeTargetLevel>
   </component>
