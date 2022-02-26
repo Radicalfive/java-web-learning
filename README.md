@@ -1,0 +1,29 @@
+# java-web-learning
+### Day01-servlet
+#### Servlet快速入门——注解方式配置Servlet
+#### Servlet快速入门——xml方式配置Servlet
+#### Servlet接口中的方法
+#### doGet和doPost方法
+#### Servlet路径配置 , urlPatterns
+### Day02-request
+#### 演示Request对象获取请求行数据
+#### Request对象获取请求头
+#### Request对象获取请求头数据：user-agent
+#### equest对象：获取请求消息体--请求参数
+#### Request对象：设置请求参数字符集
+#### Request对象：forward转发
+#### Request对象：ServletContext
+### Day03-response
+#### Response对象：文件下载
+#### Response对象：验证码
+#### Response对象
+1. 重定向
+2. 重定向资源
+3. 转发
+4. 响应字符集设置
+5. 乱码处理方法
+#### ServletContext对象
+1. 获取 ServletContext对象
+2. 获取MIME类型
+3. 域对象：共享数据
+4. 获取文件的真实(服务器)路径
