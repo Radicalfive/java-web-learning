@@ -18,7 +18,6 @@ import java.util.Set;
  **/
 @WebServlet("/requestDemo6")
 public class RequestDemo6 extends HttpServlet {
-
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //post 获取请求参数
