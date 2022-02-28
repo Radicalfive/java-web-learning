@@ -7,19 +7,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="day01-servlet" />
+        <module name="quickstart" />
         <module name="java-web-learning" />
+        <module name="book-online" />
+        <module name="day04-cookie-session" />
+        <module name="day01-servlet" />
         <module name="day02-request" />
         <module name="day03-response" />
-        <module name="day04-cookie-session" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="book-online" target="1.8" />
       <module name="day01-servlet" target="1.8" />
       <module name="day02-request" target="1.8" />
       <module name="day03-response" target="10" />
       <module name="day04-cookie-session" target="10" />
       <module name="java-web-learning" target="17" />
+      <module name="quickstart" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

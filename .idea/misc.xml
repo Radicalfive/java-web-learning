@@ -14,6 +14,8 @@
         <option value="$PROJECT_DIR$/day02-request/pom.xml" />
         <option value="$PROJECT_DIR$/day03-response/pom.xml" />
         <option value="$PROJECT_DIR$/day04-cookie-session/pom.xml" />
+        <option value="$PROJECT_DIR$/book-online/pom.xml" />
+        <option value="$PROJECT_DIR$/quickstart/pom.xml" />
       </list>
     </option>
   </component>
