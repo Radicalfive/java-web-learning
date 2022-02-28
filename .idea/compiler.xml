@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -10,12 +11,14 @@
         <module name="java-web-learning" />
         <module name="day02-request" />
         <module name="day03-response" />
+        <module name="day04-cookie-session" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="day01-servlet" target="1.8" />
       <module name="day02-request" target="1.8" />
       <module name="day03-response" target="10" />
+      <module name="day04-cookie-session" target="10" />
       <module name="java-web-learning" target="17" />
     </bytecodeTargetLevel>
   </component>
