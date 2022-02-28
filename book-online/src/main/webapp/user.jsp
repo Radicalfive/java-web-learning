@@ -11,7 +11,7 @@
 <head>
     <title>个人中心</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" type="text/css">
-    <style type="text/css">
+    <style>
         .explore {
             display: flex;
             align-items: center;
@@ -41,8 +41,9 @@
             border: none;
             border-radius: 3px;
             margin-left: 50px;
-            color: rgb(187, 187, 202);
-            font-size: 16px;
+            padding: 5px;
+            color: #9b9b9b;
+            font-size: 14px;
         }
 
         .info {
@@ -76,7 +77,7 @@
         }
 
         .info-box .top img {
-            width: 45%;
+            width: 55%;
             height: 100%;
             margin-right: 5px;
             border-radius: 5px;
@@ -118,8 +119,8 @@
 </head>
 <body>
 <%
-    User user = (User) session.getAttribute("user");
-    pageContext.setAttribute("user", user);
+    User user = (User) request.getSession().getAttribute("user");
+    request.setAttribute("user", user);
 %>
 
 <%--顶部区域，引入共用的top.jsp页面--%>
@@ -136,7 +137,7 @@
         <li>我的豆瓣</li>
     </ul>
     <label>
-        <input type="text" placeholder="搜索你感兴趣的内容和人" class="search-input">
+        <input type="text" placeholder="搜索你感兴趣的内容" class="search-input">
     </label>
 </div>
 <br>
@@ -147,7 +148,7 @@
         <%--左侧2/3区域--%>
         <div class="col-8">
             <div class="info">
-                <img src="images/${user.avatar}" alt="" class="profile">
+                <img src="${user.avatar}" alt="" class="profile">
                 <h2>${user.nickname}</h2>
             </div>
             <br>
@@ -186,7 +187,7 @@
         <div class="col-4">
             <div class="info-box">
                 <div class="top">
-                    <img src="images/${user.avatar}" alt="">
+                    <img src="${user.avatar}" alt="">
                     <div>
                         <p>常居：${user.address}</p>
                         <p>账号：${user.account}</p>
@@ -199,26 +200,26 @@
             <br>
             <div class="item">
                 <ul class="nav">
-                    <li>· · · 我的留言· · · </li>
+                    <li>我的广播· · · · · · (全部)</li>
                 </ul>
                 <br>
                 <div class="read">
                     <p><a href="">${user.nickname}</a>想读
-                        <a href="">写给idea的Tomcat10</a>
+                        <a href="">写给大忙人的Java SE 8</a>
                     </p>
-                    <p style="color: #9b9b9b;">2022年1月22日</p>
+                    <p style="color: #9b9b9b;">2018年1月2日</p>
                 </div>
                 <div class="read">
                     <p><a href="">${user.nickname}</a>想读
-                        <a href="">写给idea的Java SE 9</a>
+                        <a href="">写给大忙人的Java SE 8</a>
                     </p>
-                    <p style="color: #9b9b9b;">2022年1月2日</p>
+                    <p style="color: #9b9b9b;">2018年1月2日</p>
                 </div>
                 <div class="read">
                     <p><a href="">${user.nickname}</a>想读
-                        <a href="">写给idea的JDK179</a>
+                        <a href="">写给大忙人的Java SE 8</a>
                     </p>
-                    <p style="color: #9b9b9b;">2022年2月24日</p>
+                    <p style="color: #9b9b9b;">2018年1月2日</p>
                 </div>
             </div>
         </div>

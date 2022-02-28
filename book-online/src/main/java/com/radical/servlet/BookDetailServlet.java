@@ -34,8 +34,6 @@ public class BookDetailServlet extends HttpServlet {
             if (Integer.parseInt(id) == book.getId()) {
                 //找到匹配的id，存入request，页面转发到图书详情页，地址栏不变
                 req.setAttribute("book", book);
-                //resp.setContentType("text/plain;charset=utf-8");
-                //resp.getWriter().println(book);
                 req.getRequestDispatcher("/book_detail.jsp").forward(req, resp);
             }
         }

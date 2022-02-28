@@ -26,8 +26,6 @@ public class IndexServlet extends HttpServlet {
         List<Book> bookList = (List<Book>) sc.getAttribute("bookList");
         //存入request
         req.setAttribute("bookList", bookList);
-        //resp.setContentType("text/plain;charset=utf-8");
-        //resp.getWriter().println(bookList.toString());
         //通过服务器端转发，将数据带过去，并保持地址栏不变
         req.getRequestDispatcher("/index.jsp").forward(req, resp);
     }

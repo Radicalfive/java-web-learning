@@ -20,8 +20,8 @@ public class UserService {
     /**
      * 用户登陆功能
      *
-     * @param account
-     * @param password
+     * @param account 账号
+     * @param password 密码
      * @return user
      */
     public User signIn(String account, String password) {
