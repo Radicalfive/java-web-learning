@@ -1,4 +1,4 @@
-package com.radical.bookonline;
+package com.radical.web.ajax;
 
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;

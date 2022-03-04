@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>json练习</title>
+</head>
+<body>
+<script>
+    const jsonStr = '{"name":radical,"age":22,"male":true,"cites":["北京","南京","东京"]}'
+    console.log(jsonStr)
+    console.log(typeof jsonStr)
+    // JSON字符串转为js对象
+    // const jsonObj = JSON.parse(jsonStr)
+    // console.log(typeof jsonObj)
+    // console.log(jsonObj.name)
+
+    const obj = {
+        name:"jack",
+        age:34
+    }
+    console.log(typeof obj)
+    console.log(obj.name)
+    //js对象转为JSON字符串
+    const objStr = JSON.stringify(obj)
+    console.log(typeof objStr)
+</script>
+
+</body>
+</html>

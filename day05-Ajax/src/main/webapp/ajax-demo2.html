@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax请求示例起步——原生的JS异步请求</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<htuuon id="btn">请求</htuuon>
+<h2 id="info">请求数据</h2>
+<script>
+    document.getElementById("btn").onclick = function () {
+        axios({
+            method:"get",
+            url:"axiosServlet?username=admin"
+        }).then(function (resp) {
+            document.getElementById("info").innerHTML = JSON.stringify(resp);
+        })
+    }
+</script>
+</body>
+</html>
