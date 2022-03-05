@@ -1,0 +1,26 @@
+package com.radical.web.brand.web;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+import java.io.IOException;
+
+/**
+ * @author : radical
+ * @description :
+ * @data : 2022/3/4
+ **/
+@WebServlet("/user/*")
+public class UserServlet extends BaseServlet {
+
+    public void selectAll(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("user selectAll...");
+    }
+
+
+    public void add(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("user add...");
+    }
+}
